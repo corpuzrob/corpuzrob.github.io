@@ -320,7 +320,9 @@ footer {
         width: 100%;
     }
 
-    .column div:nth-child(1) {
+/* The following was an unsuccessful attempt to change the order of the columns in mobile view */
+
+    /* .column div:nth-child(1) {
         order: 1;
     }
 
@@ -343,7 +345,7 @@ footer {
     .column div:nth-child(6) {
         order: 6;
     }
-  }
+  } */
 /***** END OF TABLE STYLING *****/
 
 /***** CONTACT FORM STYLING *****/
