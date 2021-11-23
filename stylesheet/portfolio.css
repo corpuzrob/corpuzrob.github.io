@@ -237,11 +237,11 @@ footer {
 }
 
 /* Turned this off-Screens that are 576px and smaller will not display the background video */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
     #Typing_Video {
         display: none;
     }
-}
+} */
 
 /* Texts over the video */
 .Video_Text {
@@ -322,7 +322,7 @@ footer {
 
 /* The following was an unsuccessful attempt to change the order of the columns in mobile view */
 
-    /* .column div:nth-child(1) {
+    .column div:nth-child(1) {
         order: 1;
     }
 
@@ -345,7 +345,7 @@ footer {
     .column div:nth-child(6) {
         order: 6;
     }
-  } */
+  }
 /***** END OF TABLE STYLING *****/
 
 /***** CONTACT FORM STYLING *****/
@@ -399,11 +399,10 @@ form {
     font-family: "Poppins", "Montserrat", sans-serif;
 }
 
-.label {
+/* .label {
 
     letter-spacing: 4px;
-    font-family: "Poppins", "Montserrat", sans-serif; /* Sets the font family of all h1 headings */
-    font-weight: 600;
+    font-family: "Poppins", "Montserrat", sans-serif; 
     text-transform: uppercase;
-}
+} */
 /***** END OF CONTACT FORM STYLING *****/
