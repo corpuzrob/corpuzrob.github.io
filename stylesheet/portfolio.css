@@ -280,11 +280,11 @@ footer {
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
     .Column_1 {
         overflow: auto;
     }
-}
+} */
 
 .Column_2 {
     float: left;
@@ -315,7 +315,7 @@ footer {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 400px) {
     .Column_1, .Column_2 {
         width: 100%;
     }
