@@ -406,10 +406,11 @@ form {
     font-family: "Poppins", "Montserrat", sans-serif;
 }
 
-/* .label {
+.label {
 
     letter-spacing: 4px;
     font-family: "Poppins", "Montserrat", sans-serif; 
+    font-weight: 600;
     text-transform: uppercase;
-} */
+}
 /***** END OF CONTACT FORM STYLING *****/
