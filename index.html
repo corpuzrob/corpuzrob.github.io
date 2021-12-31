@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="UTF-8">
-</html>
-    <!--Head-->
+
+<!--Head-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
         <title>Rob Corpuz Portfolio</title>
+        <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
         <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
         <!-- Added Poppins font: -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@200;300;400;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
 
 <!--Body-->
@@ -20,9 +20,13 @@
     <!-- Navbar -->
     <div class="Navbar">
         <a class="active" href="#Home">HOME</a>
+        <!-- New section added -->
         <a href="#About">ABOUT</a>
         <a href="#Github">GITHUB</a>
-        <a href="#Contact">CONTACT</a>
+        <a href="#Slideshow">DETAILS</a>
+        <!-- <a href="#Contact">CONTACT</a> -->
+        <!-- Onclick and ondblclick functions added to open and close the contact form -->
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">CONTACT</a>
     </div>
 
     <!-- Breaks inserted for space between navbar and first heading -->
@@ -46,15 +50,16 @@
         <strong>
             <p class="center">
                 <br>
-                <q>The difference between us and a computer is that, the computer is blindingly stupid, but it is capable of being stupid many, many million times a second.</q>
+                <q>The difference between us and a computer is that, the computer is blindingly stupid,
+                    but it is capable of being stupid many, many million times a second.</q>
                     <br>
             </p>
             <p class="q2">-Douglas Adams</p>
             <p class="center">
                 <br>
-                <br> My name is Rob. Welcome to my site! Please do have a look around and let me know if I can help you.
+                <br> Welcome to my site! Please do have a look around and let me know if I can help you. Thanks for stopping by and I hope you find what you're looking for!  
                 <br>
-                <br> Thanks for stopping by and enjoy!  
+                <br> -Rob
             </p>
         </strong>
     </div>
@@ -63,19 +68,47 @@
     <div class="Row" id="About">
 
     <!-- Left Column -->
-        <div class="Column_2" class="Column">
-            <img src="images/Rob Corpuz (Hat Color) 3000x2000.jpg" alt="Rob Corpuz">
-            <!-- /Users/administrator/Documents/GitHub/HTML_and_CSS_Projects/Portfolio Website/images/Rob Corpuz (Hat B&W) 3000x2000.jpg -->
+        <!-- <div class="Column_2" class="Column">
+            <img src="images/Rob Corpuz (Hat Color) 2000x2000.jpg" alt="Rob Corpuz"> -->
+        
+        <!-- The following section was an attempt to add a square version of the profile photo for smaller sizes -->
+            <!-- <img srcset="Rob Corpuz (Hat Color) 3000x2000.jpg 3000w,
+                        Rob Corpuz (Hat Color) 2000x2000.jpg 2000w"
+                sizes="(max-width: 600px) 600px, 3000px"
+                    src="images/Rob Corpuz (Hat Color) 2000x2000.jpg"
+                    alt="Rob Corpuz - UX Designer and Coder">
+        
+        </div> -->
+
+        <!-- <div class="Column_2" class="Column">
+            <img srcset="images/Rob_Corpuz_Hat_Color_960x960.jpg 960w,
+            images/Rob_Corpuz_Hat_Color_1280x853.jpg 1200w"
+            sizes="(max-width: 1200px) 960px, 1200px"
+            src="images/Rob_Corpuz_Hat_Color_1280x853.jpg"
+            alt="Rob Corpuz - UX Designer and Coder">
+        </div> -->
+
+<!-- Desktop Blocks (Hidden on mobile)-->
+
+        <div class="Desktop Column Column_2 About_Pic">
+            <picture>
+                <source media="(min-width:1201px)" srcset="images/Rob_Corpuz_Hat_Color_1024x683.jpg">
+                <source media="(max-width:1200px)" srcset="images/Rob_Corpuz_Hat_Color_600x600.jpg">
+                <img src="images/Rob_Corpuz_Hat_Color_960x960.jpg" alt="Rob Corpuz - UX Designer and Coder">
+            </picture>
         </div>
+
+
         <!--Right column-->
-        <div class="Column_1" class="Column">
+        <div class="Desktop Column Column_1 About_Text">
             <h1>About</h1>
             <p class="p2">
                 You need someone on your team who can create and manage a digital experience that will wow your customers. I can help. 
                 <br>
-                <br>I am a full-stack developer with experience in visual communication, wireframing, UI prototyping, interaction design, information architecture, user empathy, HTML, CSS, JavaScript, SQL, Python and more, having learned UX design and software development as a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>.
+                <br>I'm a full-stack developer with experience in visual communication, wireframing, UI prototyping, interaction design, information architecture, user empathy, HTML, CSS, JavaScript, SQL, Python and more, having learned UX design and software development as a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>.
                 <br>
                 <br>I'd love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                If there is anything I can do for you, don't hesitate to <a><span class="contact " onclick="openForm()">get in touch!</span></a>
             </p>
         </div>
     </div>
@@ -84,7 +117,7 @@
     <div class="Row" id="GitHub">
 
         <!-- Left Column -->
-        <div class="Column_1" class="Column">
+        <div class="Desktop Columns Column_1 Github_Text">
             <h1>Github</h1>
             <p class="center">
                 Check out my coding projects on Github
@@ -94,37 +127,185 @@
         </div>
 
         <!-- Right Column -->
-        <div class="Column_2" class="Column">
+        <div class="Desktop Columns Column_2 Github_Pic">
             <a href="https://github.com/corpuzrob" target="_blank"><img src="images/binary-g3282e10d8_1920.jpg" alt="Binary Typing by geralt/23626">
             </a>
         </div>
     </div>
 
-    <!--Contact section-->
+<!-- Mobile Blocks (Hidden on desktop)-->
+
+    <div class="Mobile Column Column_2 About_Pic">
+        <picture>
+            <source media="(min-width:1201px)" srcset="images/Rob_Corpuz_Hat_Color_1024x683.jpg">
+            <source media="(max-width:1200px)" srcset="images/Rob_Corpuz_Hat_Color_600x600.jpg">
+            <img src="images/Rob_Corpuz_Hat_Color_960x960.jpg" alt="Rob Corpuz - UX Designer and Coder">
+        </picture>
+    </div>
+
+
+    <!--Right column-->
+    <div class="Mobile Column Column_1 About_Text">
+        <h1>About</h1>
+        <p class="p2">
+            You need someone on your team who can create and manage a digital experience that will wow your customers. I can help. 
+            <br>
+            <br>I'm a full-stack developer with experience in visual communication, wireframing, UI prototyping, interaction design, information architecture, user empathy, HTML, CSS, JavaScript, SQL, Python and more, having learned UX design and software development as a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>.
+            <br>
+            <br>I'd love to work with you on your project. <a href="#Contact">Contact</a> me below!
+        </p>
+    </div>
+    </div>
+
+    <!--GitHub section-->
+    <div class="Row" id="GitHub">
+
+    <!-- Right Column -->
+    <div class="Mobile Columns Column_2 Github_Pic">
+        <a href="https://github.com/corpuzrob" target="_blank"><img src="images/binary-g3282e10d8_1920.jpg" alt="Binary Typing by geralt/23626">
+        </a>
+    </div>
+    </div>
+
+    <!-- Left Column -->
+    <div class="Mobile Columns Column_1 Github_Text">
+        <h1>Github</h1>
+        <p class="center">
+            Check out my coding projects on Github
+            <br>
+            <p class="center"><a href="https://github.com/corpuzrob" target="_blank">Rob Corpuz on Github</a></p>
+        </p>
+    </div>
+
+
+
+
+    <!-- Slideshow section added -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background"> 
+            <div id="Slideshow_Container">
+                <!-- Slide 1 of 9 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/Rob Corpuz (Headshot) 1000x1000.jpg" alt="Picture of Me">
+                    <div class="text">As a UX designer and full-stack developer,</div>
+                </div>
+
+                <!-- Slide 2 of 9 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/woman-looking-through-binoculars.jpg" alt="'https://www.freepik.com/photos/woman' Woman photo created by wayhomestudio - www.freepik.com"> 
+                    <div class="text">I help your customers find what they're searching for.</div>
+                </div>
+
+                <!-- Slide 3 of 9 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpg" alt="HTML, CSS, and JS logos"> 
+                    <div class="text">I'm trained in HTML, CSS, and JavaScript,</div>
+                </div>
+
+                <!-- Slide 4 of 9 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/sketch-1-logo.jpg" alt="Sketch logo">
+                    <div class="text">UX design tools like Sketch, </div>
+                </div>
+
+                <!-- Slide 5 of 9 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/Figma_Logo_1200px_square.jpg" alt="Sketch logo">
+                    <div class="text">and Figma; </div>
+                </div>
+
+                <!-- Slide 6 of 9 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                    <div class="text">along with the popular programming language Python,</div>
+                </div>
+
+                <!-- Slide 7 of 9 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
+                    <div class="text">back end development, databases and SQL,</div>
+                </div>
+
+                <!-- Slide 8 of 9 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/Photoshop_Logo.jpg" alt="SQL logo"> 
+                    <div class="text">and visual tools like Photoshop.</div>
+                </div>
+
+                <!-- Slide 9 of 9 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/Old_Phone_www.robcorpuz.com.jpg" alt="'https://www.freepik.com/photos/woman' Woman photo created by wayhomestudio - www.freepik.com"> 
+                    <div class="text"><a class="white-text contact" onclick="openForm()">If I can help, don't hesitate to get in touch!</a></div> 
+                </div>
+
+                <!-- Previous and next buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> <!-- Adds a space between the slideshow images and the dots -->
+
+            <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+                <span class="dot" onclick="currentSlide(6)"></span> 
+                <span class="dot" onclick="currentSlide(7)"></span> 
+                <span class="dot" onclick="currentSlide(8)"></span> 
+                <span class="dot" onclick="currentSlide(9)"></span> 
+            </div>
+        </div>
+    </div>
+
+
+<!--
+    !--Contact section--
     <div class="Row" id="Contact">
-        <!--Contact image, left column-->
+        !--Contact image, left column--
         <div class="Column_2" class="Column">
             <img src="images/network-g36a083a11_1920.jpg" alt="Network Image by geralt on pixabay">
         </div>
-        <!--Contact form, right column-->
+        !--Contact form, right column--
         <div class="Column_1" class="Column">
             <h1>Contact</h1>
             <p class="center">I'd love to hear from you!  Please get in touch below:</p>
-            <!--This specifies where and how to send the form data; we are leaving it blank-->
-
+            !--This specifies where and how to send the form data; we are leaving it blank--
             <form 
                 action="https://formspree.io/f/xbjwrlrn" 
                 method="POST">
-                    <label class="label">Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label class="label">Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label class="label">Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                <label class="label">Name:</label>
+                    <input type="text" placeholder="Please enter your name here">
+                <label class="label">Email:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <label class="label">Message:</label>
+                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                    <input type="submit" value="SUBMIT">
             </form>
         </div>
     </div>
+-->
+
+            <!-- Contact form -->
+            <div id="Contact">
+                <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+                <div class="form-popup" id="myForm">
+                     <form action="https://formspree.io/f/xbjwrlrn" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                         <h1>Contact</h1>
+                         <label for="name"><b>NAME</b></label>
+                         <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+                           <input type="text" placeholder="Type your name here" name="name" required>
+                         <label for="phone"><b>PHONE</b></label>
+                           <input type="text" placeholder="Type your phone number here" name="phone">
+                         <label for="email"><b>EMAIL</b></label>		
+                           <input type="text" placeholder="Type your email address here" name="email" required>
+                         <label for="message"><b>MESSAGE</b></label>
+                           <input type="text" placeholder="Type your message here" name="message">
+                         <button type="submit" class="btn">SUBMIT</button>
+                     </form>
+                </div>
+             </div>
 
       <!--Footer section-->
     <footer>
@@ -133,6 +314,7 @@
             <br>
         </p>
     </footer>
+    <script src="JS/portfolio.js"></script>
+    <!-- <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0302'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html> -->
 </body>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0302'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
-</body>
+</html>
