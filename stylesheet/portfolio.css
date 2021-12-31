@@ -358,6 +358,11 @@ footer {
     from {opacity: .4;} /* Image starts transparent */
     to {opacity: 1;} /* Image ends opaque */
 }
+
+/* Text on last slide had a conflict with sizing so this makes it white */
+.special_slide_text {
+    color: white;
+}
 /***** End Slideshow Styling *****/
 
 
