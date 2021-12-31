@@ -155,7 +155,7 @@ footer {
     z-index: 1; /* This ensures other elements don't display over the navbar */
     -webkit-animation: moveNav 1s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
     animation: moveNav 1s; /* This applies the moveNav animation for all other browsers */
-    padding-right: 4vw; /* The contact button was too close to the edge, so needed this */
+    /* padding-right: 4vw; The contact button was too close to the edge, so needed this */
 }
 
 /* moveNav animation effect for moving the nav bar in from the left of the screen */
