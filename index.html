@@ -26,7 +26,7 @@
         <a href="#Slideshow">DETAILS</a>
         <!-- <a href="#Contact">CONTACT</a> -->
         <!-- Onclick and ondblclick functions added to open and close the contact form -->
-        <a onclick="openForm()" ondblclick="closeForm()" class="contact">CONTACT</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">CONTACT&nbsp;</a>
     </div>
 
     <!-- Breaks inserted for space between navbar and first heading -->
@@ -57,38 +57,20 @@
             <p class="q2">-Douglas Adams</p>
             <p class="center">
                 <br>
-                <br> Welcome to my site! Please do have a look around and let me know if I can help you. Thanks for stopping by and I hope you find what you're looking for!  
+                <br> Welcome to my site! Please do have a look around and let me know if I can help you. Thanks for stopping by and I hope you find what you're searching for!  
                 <br>
                 <br> -Rob
             </p>
         </strong>
     </div>
 
+
+
+<!-- Desktop Blocks (Hidden on mobile)-->
+
     <!-- About Section -->
     <div class="Row" id="About">
 
-    <!-- Left Column -->
-        <!-- <div class="Column_2" class="Column">
-            <img src="images/Rob Corpuz (Hat Color) 2000x2000.jpg" alt="Rob Corpuz"> -->
-        
-        <!-- The following section was an attempt to add a square version of the profile photo for smaller sizes -->
-            <!-- <img srcset="Rob Corpuz (Hat Color) 3000x2000.jpg 3000w,
-                        Rob Corpuz (Hat Color) 2000x2000.jpg 2000w"
-                sizes="(max-width: 600px) 600px, 3000px"
-                    src="images/Rob Corpuz (Hat Color) 2000x2000.jpg"
-                    alt="Rob Corpuz - UX Designer and Coder">
-        
-        </div> -->
-
-        <!-- <div class="Column_2" class="Column">
-            <img srcset="images/Rob_Corpuz_Hat_Color_960x960.jpg 960w,
-            images/Rob_Corpuz_Hat_Color_1280x853.jpg 1200w"
-            sizes="(max-width: 1200px) 960px, 1200px"
-            src="images/Rob_Corpuz_Hat_Color_1280x853.jpg"
-            alt="Rob Corpuz - UX Designer and Coder">
-        </div> -->
-
-<!-- Desktop Blocks (Hidden on mobile)-->
 
         <div class="Desktop Column Column_2 About_Pic">
             <picture>
@@ -107,7 +89,7 @@
                 <br>
                 <br>I'm a full-stack developer with experience in visual communication, wireframing, UI prototyping, interaction design, information architecture, user empathy, HTML, CSS, JavaScript, SQL, Python and more, having learned UX design and software development as a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>.
                 <br>
-                <br>I'd love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                <br>I'd love to work with you on your project. 
                 If there is anything I can do for you, don't hesitate to <a><span class="contact " onclick="openForm()">get in touch!</span></a>
             </p>
         </div>
@@ -134,7 +116,8 @@
     </div>
 
 <!-- Mobile Blocks (Hidden on desktop)-->
-
+    
+<!-- About Section -->
     <div class="Mobile Column Column_2 About_Pic">
         <picture>
             <source media="(min-width:1201px)" srcset="images/Rob_Corpuz_Hat_Color_1024x683.jpg">
@@ -152,7 +135,8 @@
             <br>
             <br>I'm a full-stack developer with experience in visual communication, wireframing, UI prototyping, interaction design, information architecture, user empathy, HTML, CSS, JavaScript, SQL, Python and more, having learned UX design and software development as a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>.
             <br>
-            <br>I'd love to work with you on your project. <a href="#Contact">Contact</a> me below!
+            <br>I'd love to work with you on your project. 
+            If there is anything I can do for you, don't hesitate to <a><span class="contact " onclick="openForm()">get in touch!</span></a>
         </p>
     </div>
     </div>
@@ -165,7 +149,6 @@
         <a href="https://github.com/corpuzrob" target="_blank"><img src="images/binary-g3282e10d8_1920.jpg" alt="Binary Typing by geralt/23626">
         </a>
     </div>
-    </div>
 
     <!-- Left Column -->
     <div class="Mobile Columns Column_1 Github_Text">
@@ -176,8 +159,7 @@
             <p class="center"><a href="https://github.com/corpuzrob" target="_blank">Rob Corpuz on Github</a></p>
         </p>
     </div>
-
-
+</div>
 
 
     <!-- Slideshow section added -->
@@ -235,7 +217,7 @@
                 <!-- Slide 9 of 9 -->
                 <div class="mySlides fade">
                     <img class="Slideshow_Images" src="images/Old_Phone_www.robcorpuz.com.jpg" alt="'https://www.freepik.com/photos/woman' Woman photo created by wayhomestudio - www.freepik.com"> 
-                    <div class="text"><a class="white-text contact" onclick="openForm()">If I can help, don't hesitate to get in touch!</a></div> 
+                    <div class="text"><a class="contact special_slide_text" onclick="openForm()">If I can help, don't hesitate to get in touch!</a></div> 
                 </div>
 
                 <!-- Previous and next buttons -->
@@ -259,33 +241,6 @@
         </div>
     </div>
 
-
-<!--
-    !--Contact section--
-    <div class="Row" id="Contact">
-        !--Contact image, left column--
-        <div class="Column_2" class="Column">
-            <img src="images/network-g36a083a11_1920.jpg" alt="Network Image by geralt on pixabay">
-        </div>
-        !--Contact form, right column--
-        <div class="Column_1" class="Column">
-            <h1>Contact</h1>
-            <p class="center">I'd love to hear from you!  Please get in touch below:</p>
-            !--This specifies where and how to send the form data; we are leaving it blank--
-            <form 
-                action="https://formspree.io/f/xbjwrlrn" 
-                method="POST">
-                <label class="label">Name:</label>
-                    <input type="text" placeholder="Please enter your name here">
-                <label class="label">Email:</label>
-                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                <label class="label">Message:</label>
-                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                    <input type="submit" value="SUBMIT">
-            </form>
-        </div>
-    </div>
--->
 
             <!-- Contact form -->
             <div id="Contact">
