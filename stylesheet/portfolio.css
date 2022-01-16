@@ -599,7 +599,7 @@ input[type=text]:focus-visible {
         /* text-align: left; */
     }
     .Nav_Home a{
-        width: 17%;
+        width: 18%;
     }
 
     .Nav_About a{
@@ -615,7 +615,7 @@ input[type=text]:focus-visible {
     }
 
     .Nav_Contact a{
-        width: 26%;
+        width: 24%;
     }
 
     /* Hides desktop class to reorder main blocks */
