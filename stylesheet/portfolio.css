@@ -585,8 +585,11 @@ input[type=text]:focus-visible {
     }
 
     .Navbar {
+        width: 100%;
         font-size: 2.5vw;
         font-weight: 700;
+        text-align: center;
+        /* text-align: left; */
         /* padding-right: 2vw; */
     }
 
@@ -595,10 +598,33 @@ input[type=text]:focus-visible {
         font-size: 2.5vw;
         font-weight: 800;
         letter-spacing: 2.75px;
-        /* padding-right: 2vw; */
         /* text-align: left; */
+        /* padding-right: 2vw; */
+        /* margin-right: 1vw; */
+        text-align: center;
     }
-    .Nav_Home a{
+
+    .Nav_Home {
+        width: 18%;
+    }
+
+    .Nav_About {
+        width: 18%;
+    }
+
+    .Nav_Github {
+        width: 19%;
+    }
+
+    .Nav_Details {
+        width: 20%;
+    }
+
+    .Nav_Contact {
+        width: 25%;
+    }
+
+    /* .Nav_Home a{
         width: 18%;
     }
 
@@ -610,13 +636,13 @@ input[type=text]:focus-visible {
         width: 19%;
     }
 
-    .Nav_Contact a{
+    .Nav_Details a{
         width: 20%;
     }
 
     .Nav_Contact a{
-        width: 24%;
-    }
+        width: 22%;
+    } */
 
     /* Hides desktop class to reorder main blocks */
     .Desktop {
