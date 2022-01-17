@@ -135,7 +135,7 @@ img {
 
 /* Image element hover effects */
 img:hover {
-    filter: grayscale(30%) contrast(105%);  /* Brings back most of the image's color when hovered over */
+    filter: grayscale(20%) contrast(105%);  /* Brings back most of the image's color when hovered over */
     transition: transform 1s; /* Transition lasts 1 second */
 	transform: scale(1.1); /* Image is increased slightly when hovered over */
 }
@@ -664,7 +664,7 @@ input[type=text]:focus-visible {
 
     /* Image elements with filters reversed from desktop view*/
     img {
-        filter: grayscale(30%) contrast(105%);  /* Desaturates slightly, adds contrast */
+        filter: grayscale(15%) contrast(105%);  /* Desaturates slightly, adds contrast */
     }
 
     /* Image element hover effects */
@@ -718,6 +718,17 @@ input[type=text]:focus-visible {
     .form-container .cancel {
         width: 5%;
         text-align: right;
+    }
+
+    /* Anchor elements */
+    a {
+        color: #888eb2; /* This ensures all links are grey */
+        text-decoration: underline;
+    }
+
+    /* Anchor elements */
+    a:hover {
+        color: grey; /* This ensures all links are blue on hover */
     }
 }
 
