@@ -154,7 +154,7 @@ footer {
     background-color: white; /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     top: 0; /* This ensures no space is displayed above the navbar */
-    font-weight: 400;
+    font-weight: 700;
     width: 100%; /* This makes the navbar span the entire width of the page */
     z-index: 1; /* This ensures other elements don't display over the navbar */
     -webkit-animation: moveNav 1s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
@@ -197,7 +197,7 @@ footer {
 .Navbar a:hover {
     background-color: black; /* Defines the background color that will display when you hover over the link */
     color: #888eb2; /* This defines the font color that will display when navbar a elements are hovered over */
-    font-weight: bold; /* This makes the text on the navbar bold when hovered over */
+    font-weight: 800; /* This makes the text on the navbar bold when hovered over */
     transition: 0.5s ease-in; /* Creates a smooth transition for the hover trigger */
 }
 
