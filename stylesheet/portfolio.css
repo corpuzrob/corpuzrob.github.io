@@ -270,7 +270,7 @@ footer {
     height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
     padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
     position: relative; /* This sets the container relative to its normal positioning */
-    margin:auto; /* This will horizontally center the container on the page */
+    margin: auto; /* This will horizontally center the container on the page */
 }
 
 /* Remove the underline from the previous and next buttons on the slideshow */
@@ -675,7 +675,7 @@ input[type=text]:focus-visible {
     #Slideshow_Container {
         width: 100vw; /* Relative sizing of the container for the slidewshow set to 100% of the viewport width */
         height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
-        /* padding-top: 4%; Adds a small padding to the top of the slideshow container */
+        padding-top: 4%; Adds a small padding to the top of the slideshow container
         position: relative; /* This sets the container relative to its normal positioning */
         margin:auto; /* This will horizontally center the container on the page */
     }
@@ -722,7 +722,7 @@ input[type=text]:focus-visible {
 
     /* Anchor elements */
     a {
-        color: #888eb2; /* This ensures all links are grey */
+        color: #888eb2; /* This ensures all links are blavender */
         text-decoration: underline;
     }
 
