@@ -479,8 +479,10 @@ footer {
     padding: .93vw; /* Adds padding to the input boxes */
     margin: .6vw 0 .6vw 0; /* Adds space between the input boxes and the labels */
     border: none; /* Removes the border from the input boxes */
-    background: Gainsboro; /* Sets the background color of the input boxes */
+    /* background: Gainsboro; Sets the background color of the input boxes */
+    background: lightgray; /* Sets the background color of the input boxes */
     font-size: 1vw; /* Relative font sizing based on the width of the viewport */
+    /* color: black !important; */
 }
 
 /* General styling for all buttons */
@@ -495,6 +497,7 @@ button {
     cursor: pointer; /* Changes the cursor to pointer over button elements */
     width: 100%; /* Sets the width of the buttons to 100% of their containers */
     height: auto; /* Allows the height to be resized depending on the content showing */
+    border: solid black; /* This makes a solid black border around the button */
 }
 
 /* Hover effect for contact and submit buttons */
@@ -503,7 +506,7 @@ button:hover, .form-container .btn:hover {
     background-color: black; /* The background of the button changes to black when hovered over */
     transition-duration: 1s; /* This makes the transition last 1 second */
     -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
-    border-color: silver; /* The border turns silver when the button is hovered over */
+    border-color: #888eb2; /* The border turns silver when the button is hovered over */
     font-weight: bold;
 }
 
@@ -512,7 +515,10 @@ button:hover, .form-container .btn:hover {
     background-color: white; 
     color: black;
     border-color: black;
+    margin: 0 auto;
+    display: block;
     margin-bottom: 1vh; /* Adds space between the submit button and the close button */
+    width: 15vw;
 }
 
 /* Close button */
@@ -589,6 +595,7 @@ input[type=text]:focus-visible {
         font-size: 2.5vw;
         font-weight: 700;
         text-align: center;
+        background-color: #888eb2;
         /* text-align: left; */
         /* padding-right: 2vw; */
     }
@@ -597,6 +604,8 @@ input[type=text]:focus-visible {
         /* width: 20%;  */
         font-size: 2.5vw;
         font-weight: 800;
+        color: black;
+        background-color: #888eb2;
         letter-spacing: 2.75px;
         /* text-align: left; */
         /* padding-right: 2vw; */
@@ -675,7 +684,7 @@ input[type=text]:focus-visible {
     #Slideshow_Container {
         width: 100vw; /* Relative sizing of the container for the slidewshow set to 100% of the viewport width */
         height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
-        padding-top: 4%; Adds a small padding to the top of the slideshow container
+        padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
         position: relative; /* This sets the container relative to its normal positioning */
         margin:auto; /* This will horizontally center the container on the page */
     }
@@ -687,16 +696,32 @@ input[type=text]:focus-visible {
         padding: 2vw; /* Adds padding equal to 2% of the viewport width */
         font-size: 5vw;
         text-align: center;
+        color: #888eb2;
     }
 
     .Pop_Up_Button {
         width: 25vw; /* Sets the width relative to the viewport width */
         font-size: 3vw; /* Relative sizing of text */
+        border: none;
+        color: black; /* This makes the text in the buttons white when hovered over */
+        background-color: #888eb2; /* The background of the button changes to black when hovered over */
+        margin-bottom: 2vw;
+        margin-right: 2vw;
     }
 
     /* General styling for all buttons */
     button {
         font-size: 3vw; /* Relative sizing of text */
+        color: black; /* This makes the text in the buttons white when hovered over */
+        background-color: #888eb2; /* The background of the button changes to black when hovered over */
+        border-color: black;
+        border-radius: 2px;
+    }
+
+    /* Hover effect for contact and submit buttons */
+    button:hover, .form-container .btn:hover {
+        color: #888eb2; /* This makes the text in the buttons white when hovered over */
+        background-color: black; /* The background of the button changes to black when hovered over */
     }
 
     /* Form styling */
@@ -708,16 +733,39 @@ input[type=text]:focus-visible {
 
     .form-popup {
         font-size: 3vw;
+        color: black;
+    }
+
+    /* Submit button */
+    .form-container .btn {
+        background-color: #888eb2; 
+        color: black;
+        /* border-color: black; */
+        border: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 1vh;
+        margin-bottom: 1vh; /* Adds space between the submit button and the close button */
+        width: 25vw;
+
     }
 
     .form-container input[type=text] {
         font-size: 3vw; /* Relative font sizing based on the width of the viewport */
+        color: black;
+        margin: 1vw 0 1vw 0; /* Adds space between the input boxes and the labels */
+        padding: 2vw; /* Adds padding to the input boxes */
     }
 
     /* Close button */
     .form-container .cancel {
         width: 5%;
         text-align: right;
+        color: #888eb2;
+        background-color: white;
+        font-size: 3vw;
+        margin-top: 0;
+        position: absolute; right: 5px; top: 0px;
     }
 
     /* Anchor elements */
