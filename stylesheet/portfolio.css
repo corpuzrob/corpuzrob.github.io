@@ -1,13 +1,96 @@
 /***** GENERAL STYLING *****/
+
+/* Fonts */
+
+@font-face {
+    font-family: 'lemon_milkbold';
+    src: url('lemonmilk-bold-webfont.woff2') format('woff2'),
+         url('lemonmilk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lemon_milkbold_italic';
+    src: url('lemonmilk-bolditalic-webfont.woff2') format('woff2'),
+         url('lemonmilk-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lemon_milklight';
+    src: url('lemonmilk-light-webfont.woff2') format('woff2'),
+         url('lemonmilk-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lemon_milklight_italic';
+    src: url('lemonmilk-lightitalic-webfont.woff2') format('woff2'),
+         url('lemonmilk-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lemon_milkmedium';
+    src: url('lemonmilk-medium-webfont.woff2') format('woff2'),
+         url('lemonmilk-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lemon_milkmedium_italic';
+    src: url('lemonmilk-mediumitalic-webfont.woff2') format('woff2'),
+         url('lemonmilk-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lemon_milkregular';
+    src: url('lemonmilk-regular-webfont.woff2') format('woff2'),
+         url('lemonmilk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lemon_milkregular_italic';
+    src: url('lemonmilk-regularitalic-webfont.woff2') format('woff2'),
+         url('lemonmilk-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lemon_milkbold';
+    src: url('lemonmilk-bold-webfont.woff2') format('woff2'),
+         url('lemonmilk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Body */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    margin: 0%;  /* This ensures our site displays all the way to the edge of the browser screen */
+    margin: 0;  /* This ensures our site displays all the way to the edge of the browser screen */
     opacity: 1; /* This and transition affect the page loading fade in effect */
     transition: 3s opacity; /* This causes a 3 second fade in */
     letter-spacing: .2vw; /* vw is a relative measurement, 1vw is equal to 1% of the viewport width */
     font-family: "Poppins", "Montserrat", sans-serif; /* Sets the font family of all h1 headings */
-    font-size: 1.5vw; 
+    /* font-size: 1.5vw;  */
+    font-size: 1em;
+    background-color: black;
     overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
     user-select: none; /* This prevents the text on the webpage from being highlighted by the user */
 }
@@ -17,8 +100,10 @@ body {
 
 h1 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
-    font-family: "Poppins", "Montserrat", sans-serif; /* Sets the font family of all h1 headings */
-    font-weight: 700;
+    /* Sets the font family of all h1 headings */
+    /* font-family: "Poppins", "Montserrat", sans-serif;  */
+    font-family: "lemon_milkregular", "Poppins", "Montserrat", sans-serif;
+    /* font-weight: 700; */
     text-align: center; /* Centering all h1 elements */
     margin-top: 0%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
@@ -29,9 +114,10 @@ h1 {
 h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
     transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
-    transition: transform 1s; /* This causes the transformation to last 1 second */
-    font-weight: 800;
-    /* text-shadow: 1px 13px 5px 0.5#aba8a8; */
+    transition: transform 0.5s; /* This causes the transformation to last 1 second */
+    font-family: "lemon_milkmedium", "Poppins", "Montserrat", sans-serif;
+    /* font-weight: 800; */
+    text-shadow: 1px 13px 5px 0.5#aba8a8;
 }
 
 /* Styling for portfolio title text */
@@ -46,25 +132,43 @@ h1:hover {
 
 .Name {
     text-transform: uppercase; /* Capitalizing all h1 headings */
-    font-family: "Poppins", "Montserrat", sans-serif; /* Sets the font family of all h1 headings */
-    font-weight: 200;
+    /* Sets the font family of all h1 headings */
+    /* font-family: "Poppins", "Montserrat", sans-serif;  */
+    font-family: "lemon_milklight", "Poppins", "Montserrat", sans-serif;
+    /* font-weight: 200; */
     /* font-size: 54px; */
-    font-size: 5vw;
+    /* font-size: 5vw; */
+    font-size: 6em;
     text-align: center; /* Centering all h1 elements */
-    margin-top: 5vw; /* Adds a small margin above name */
+    margin-top: 20vh; /* Adds a small margin above name */
     color: #fff; 
     /* margin-bottom: -72px; */
     letter-spacing: 12px;
-    margin-bottom: 0px;
+    margin-bottom: 2vh;
     bottom: 0;
 }
 
 .Name:hover {
-    filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
     transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
-    transition: transform 1s; /* This causes the transformation to last 1 second */
-    font-weight: 500;
+    transition: transform 0.5s; /* This causes the transformation to last 1 second */
+    /* font-weight: 500; */
     color: white;
+    font-family: "lemon_milkregular", "Poppins", "Montserrat", sans-serif;
+}
+
+.Title {
+    font-size: 2.5em;
+    color: #fff; 
+    letter-spacing: 12px;
+    margin-bottom: 0px;
+    bottom: 0;
+    font-family: "lemon_milkmedium", "Poppins", "Montserrat", sans-serif;
+}
+
+.Title:hover {
+    transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
+    transition: transform 0.5s; /* This causes the transformation to last 1 second */
+    font-family: "lemon_milkbold", "Poppins", "Montserrat", sans-serif;
 }
 
 /* Paragraph elements */
@@ -73,9 +177,10 @@ p {
     /* font-family: 'Marcellus', serif;     */
     /* font-family: 'Taviraj', serif; */
     /* font-family: Avant Garde, Helvetica; */
-    text-align: justify; /* Justify text within paragraph elements */
+    text-align: left; /* Justify text within paragraph elements */
     letter-spacing: 1px; /* This expands the text slightly */
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1em;
     font-weight: 400;
     padding-left: 60px; /* Adds padding to the left of the paragraph element */
     padding-right: 60px; /* Adds padding to the right of the paragraph element */
@@ -84,8 +189,12 @@ p {
 /* Paragraph element hover effect */
 p:hover {
 	/* color: gray; */	/* Color changes when paragraph elements are hovered over */
-    transition: transform 1s; /* This makes the transform effect last 1 second */
+    transition: transform 0.5s; /* This makes the transform effect last 1 second */
 	transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
+}
+
+.p2 {
+    padding-top: 1rem;
 }
 
 /* Center class - this applies to all elements with the class "center" */
@@ -95,7 +204,7 @@ p:hover {
 
 /* Center class hover effect - This only affects the quote, github link, and footer */
 .center:hover {
-    transition: transform 2s; /* This makes the transform effect last 2 seconds */
+    transition: transform 0.5s; /* This makes the transform effect last 2 seconds */
     transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
 }
 
@@ -111,15 +220,35 @@ a:hover {
 }
 
 /* Quotation elements */
-q {
+
+.q-container {
+    text-decoration: strong;
+    /* text-align: center; */
+    letter-spacing: 0px; /* This removes the text spacing */
+    width: 50vw;
+    margin: 40vh auto 0;
     font-style: italic; /* This makes the quote italicized */
-    font-size: 14px;
 }
 
-.q2 {
+.q-container:hover {
+    transition: transform 0.5s; /* This makes the transform effect last 2 seconds */
+    transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
+}
+
+q {
     font-style: italic; /* This makes the quote italicized */
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 1.2rem;
+    /* text-align: left; */
+    text-justify: right;
+    margin-top: 20vh;
+    padding-top: 10rem;
     text-align: center;
+}
+
+.Douglas {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 /* Image elements */
@@ -136,7 +265,7 @@ img {
 /* Image element hover effects */
 img:hover {
     filter: grayscale(20%) contrast(105%);  /* Brings back most of the image's color when hovered over */
-    transition: transform 1s; /* Transition lasts 1 second */
+    transition: transform 0.5s; /* Transition lasts 1 second */
 	transform: scale(1.1); /* Image is increased slightly when hovered over */
 }
 
@@ -154,12 +283,13 @@ footer {
     background-color: white; /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     top: 0; /* This ensures no space is displayed above the navbar */
-    font-weight: 700;
+    /* font-weight: 700; */
     width: 100%; /* This makes the navbar span the entire width of the page */
     z-index: 1; /* This ensures other elements don't display over the navbar */
     -webkit-animation: moveNav 1s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
     animation: moveNav 1s; /* This applies the moveNav animation for all other browsers */
     /* padding-right: 4vw; The contact button was too close to the edge, so needed this */
+    font-size: 1.5em;
 }
 
 /* moveNav animation effect for moving the nav bar in from the left of the screen */
@@ -175,14 +305,15 @@ footer {
     color: black; /* This is the font color for text on our navbar */
     padding: 14px 16px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
-    font-family: "Poppins", "Montserrat", sans-serif; /* This specifies the font family for text on our navbar */
-    font-weight: 700;
+    font-family: "lemon_milkregular", "Poppins", "Montserrat", sans-serif; /* This specifies the font family for text on our navbar */
+    /* font-weight: 700; */
     /* font-size: 20px; This specifies the font size for text on our navbar */
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
+    font-size: 1em;
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveNavText 1s; /* Animation for Safari 4.0 - 8.0 */
-    animation: moveNavText 1s; /* Applies the moveNavText animation for 1s */ 
+    -webkit-animation: moveNavText 0.5s; /* Animation for Safari 4.0 - 8.0 */
+    animation: moveNavText 0.5s; /* Applies the moveNavText animation for 1s */ 
     letter-spacing: 4px;
     background-color: white; /* Defines the background color */
 }
@@ -197,8 +328,9 @@ footer {
 .Navbar a:hover {
     background-color: black; /* Defines the background color that will display when you hover over the link */
     color: #888eb2; /* This defines the font color that will display when navbar a elements are hovered over */
-    font-weight: 800; /* This makes the text on the navbar bold when hovered over */
+    /* font-weight: 800; This makes the text on the navbar bold when hovered over */
     transition: 0.5s ease-in; /* Creates a smooth transition for the hover trigger */
+    font-family: "lemon_milkmedium", "Poppins", "Montserrat", sans-serif; /* This makes the font bolder*/
 }
 
 /* Navbar home button */
@@ -211,23 +343,67 @@ footer {
 /***** VIDEO STYLING *****/
 
 /* Formatting for background video */
+/* #Header_Video { */
+    /* position: fixed; /* This fixes the video to the page */
+    /* top: 0; /* I added this to fix the grey bar problem */
+    /* right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
+    /* bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
+    /* min-width: 100%; /* This ensures the video is displayed across the full width of the page */
+    /* z-index: -1; /* This places the video behind the other elements on the page */
+    /* /* filter: grayscale(10%);  Brings back most of the video's color when hovered over */
+    /* filter: invert(0%) sepia(0%) saturate(50%) hue-rotate(43deg) brightness(93%) contrast(100%);
+    /* /* filter: invert(100%); Tried inverted effect */
+/* } */
+
+/* home {
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+} */
+
+/* Hides mobile class to reorder main blocks */
+/* @media screen and (min-width: 1600px) {
+    video {
+        display: block;
+        height: 100vh!important;
+        width: 100vw!important;
+    }
+} */
+
+/* video {
+    display: block;
+    height: 100vh!important;
+    width: auto!important;
+    object-fit: cover!important;
+    margin-right: auto!important;
+    margin-left: auto!important;
+} */
+
 #Header_Video {
     position: fixed; /* This fixes the video to the page */
-    top: 0; /* I added this to fix the grey bar problem */
-    right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
-    bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
-    min-width: 100%; /* This ensures the video is displayed across the full width of the page */
+    display: block!important;
+    height: 100vh!important;
+    width: auto; 
+    object-fit: cover!important;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    overflow: hidden;
+    border: none!important;    
     z-index: -1; /* This places the video behind the other elements on the page */
-    /* filter: grayscale(10%);  Brings back most of the video's color when hovered over */
     filter: invert(0%) sepia(0%) saturate(50%) hue-rotate(43deg) brightness(93%) contrast(100%);
-    /* filter: invert(100%); Tried inverted effect */
 }
 
 /* Added video element hover effects */
 #Header_Video:hover {
     filter: grayscale(100%); /* Added grayscale effect */
-    transition: transform 1s; /* Transition lasts 1 second */
+    transition: transform 0.5s; /* Transition lasts 1 second */
 	transform: scale(1.1); /* Video is increased slightly when hovered over */
+}
+
+.middle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Turned this off-Screens that are 576px and smaller will not display the background video */
@@ -266,7 +442,8 @@ footer {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-    width: 39.5vw; /* Relative sizing of the container for the slidewshow set to 39.5% of the viewport width */
+    /* width: 39.5vw; Relative sizing of the container for the slidewshow set to 39.5% of the viewport width */
+    width: 39.5vw;
     height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
     padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
     position: relative; /* This sets the container relative to its normal positioning */
@@ -433,8 +610,13 @@ footer {
     color: black; /* Sets the color of the button text to black */
     border: solid black; /* This makes a solid black border around the button */
     cursor: pointer; /* This changes the cursor when hovered over the button to a pointer */
-    -webkit-animation: movePopup 1s; /* Animation for 1 seconds for Safari 4.0-8.0 */
-    animation: movePopup 1s; /* Animation set for 1 seconds */
+    -webkit-animation: movePopup 0.5s; /* Animation for 1 seconds for Safari 4.0-8.0 */
+    animation: movePopup 0.5s; /* Animation set for 1 seconds */
+    font-family: "lemon_milkregular", "Poppins", "Montserrat", sans-serif;
+}
+
+.Pop_Up_Button:hover {
+    font-family: "lemon_milkmedium", "Poppins", "Montserrat", sans-serif;
 }
 
 /* movePopup animation moves the button from off the right side of the screen to its fixed location on the viewport */
@@ -462,7 +644,7 @@ footer {
     position: fixed; /* The form stays in the same location no matter what */
     bottom: .5vw; /* Slightly up from the bottom of the viewport */
     right: .5vw; /* Slightly in from the right side of the viewport */
-    font-family: "Poppins", "Montserrat", sans-serif; /* This specifies the font family for text on our navbar */
+    font-family: "lemon_milkregular","Poppins", "Montserrat", sans-serif; /* This specifies the font family for text on our navbar */
     font-weight: 400;
 }
 
@@ -487,8 +669,8 @@ footer {
 
 /* General styling for all buttons */
 button {
-    font-family: "Poppins", "Montserrat", sans-serif; /* This specifies the font family for text on our navbar */
-    font-weight: 500;    
+    font-family: "lemon-milkregular", "Poppins", "Montserrat", sans-serif; /* This specifies the font family for text on our navbar */
+    /* font-weight: 500;     */
     letter-spacing: 0.4vw; /* Adds slight spacing between the letters */
     font-size: 1.5vw; /* Relative sizing of text */
     /* font-weight: bold;  */
@@ -504,10 +686,11 @@ button {
 button:hover, .form-container .btn:hover {
     color: #888eb2; /* This makes the text in the buttons white when hovered over */
     background-color: black; /* The background of the button changes to black when hovered over */
-    transition-duration: 1s; /* This makes the transition last 1 second */
-    -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
+    transition-duration: 0.5s; /* This makes the transition last 1 second */
+    -webkit-transition-duration: 0.5s; /* For Safari 4.0-8.0 */
     border-color: #888eb2; /* The border turns silver when the button is hovered over */
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: "lemon_milkmedium", "Poppins", "Montserrat", sans-serif;
 }
 
 /* Submit button */
@@ -519,6 +702,7 @@ button:hover, .form-container .btn:hover {
     display: block;
     margin-bottom: 1vh; /* Adds space between the submit button and the close button */
     width: 15vw;
+    font-family: "lemon_milkregular", "Poppins", "Montserrat", sans-serif;
 }
 
 /* Close button */
@@ -532,6 +716,7 @@ button:hover, .form-container .btn:hover {
     /* top: .5vw; Slightly up from the bottom of the viewport */
     /* right: .5vw; Slightly in from the right side of the viewport */
     position: absolute; right: 2px; top: 2px;
+    font-family: "lemon_milkregular", "Poppins", "Montserrat", sans-serif;
 }
 
 /* Styling for close button on hover */
@@ -539,8 +724,9 @@ button:hover, .form-container .btn:hover {
     color: #888eb2;
     background-color: black;
     border-color: grey;
-    transition-duration: 1s;
-    -webkit-transition-duration: 1s;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    font-family: "lemon_milkmedium", "Poppins", "Montserrat", sans-serif;
 }
 
 /* Changes input box outline on click to blavender from default pink */
@@ -552,6 +738,9 @@ input[type=text]:focus-visible {
 }
 /***** END OF NEW CONTACT FORM STYLING *****/
 
+.goodbye {
+    margin-bottom: 1rem;
+}
 
 /* Hides mobile class to reorder main blocks */
 @media screen and (min-width: 1200px) {
@@ -569,25 +758,23 @@ input[type=text]:focus-visible {
         width: 100%;
     }
 
-    .Name {
-
-        font-size: 10vw;
-        margin-top: 15vw; /* Adds a small margin above name */
-        margin-bottom: 5vw;
-
-    }
-
-    .white-text {
-        font-size: 5vw;
-        margin-bottom: 5vw;
-    }
-
     h1 {
+        font-size: 5vw;
+    }
+
+    .Name {
+        font-size: 11vw;
+        margin-top: 3vh; /* Adds a small margin above name */
+        margin-bottom: 2vh;
+    }
+
+    .Title {
         font-size: 4vw;
+        margin: 10%;
     }
 
     .text {
-        font-size: 3vw; /* Font size is relative to the size of the viewport width */
+        font-size: 3vw; /* This is for the slideshow: font size is relative to the size of the viewport width */
     }
 
     .Navbar {
@@ -632,26 +819,6 @@ input[type=text]:focus-visible {
     .Nav_Contact {
         width: 25%;
     }
-
-    /* .Nav_Home a{
-        width: 18%;
-    }
-
-    .Nav_About a{
-        width: 18%;
-    }
-
-    .Nav_Github a{
-        width: 19%;
-    }
-
-    .Nav_Details a{
-        width: 20%;
-    }
-
-    .Nav_Contact a{
-        width: 22%;
-    } */
 
     /* Hides desktop class to reorder main blocks */
     .Desktop {
@@ -732,7 +899,7 @@ input[type=text]:focus-visible {
     }
 
     .form-popup {
-        font-size: 3vw;
+        font-size: 1em;
         color: black;
     }
 
@@ -751,7 +918,7 @@ input[type=text]:focus-visible {
     }
 
     .form-container input[type=text] {
-        font-size: 3vw; /* Relative font sizing based on the width of the viewport */
+        font-size: 1em; /* Relative font sizing based on the width of the viewport */
         color: black;
         margin: 1vw 0 1vw 0; /* Adds space between the input boxes and the labels */
         padding: 2vw; /* Adds padding to the input boxes */
@@ -763,7 +930,8 @@ input[type=text]:focus-visible {
         text-align: right;
         color: #888eb2;
         background-color: white;
-        font-size: 3vw;
+        /* font-size: 3vw; */
+        font-size: 1em;
         margin-top: 0;
         position: absolute; right: 5px; top: 0px;
     }
@@ -778,7 +946,31 @@ input[type=text]:focus-visible {
     a:hover {
         color: grey; /* This ensures all links are blue on hover */
     }
+
+    .q-container {
+        margin-bottom: 15vh;
+        text-align: left;
+        width: 70vw;
+    }
+
+    .Douglas {
+        text-align: right;
+    }
+
+    q, .Douglas {
+        font-size: 0.7em;
+    }
+
+    p {
+        font-size: 1em;
+        /* margin: 0; */
+        padding: 0;
+        margin: 0 2rem 0 2rem;
+    }
+
+    .column {
+        padding: 0;
+    }
 }
 
   /***** END OF MOBILE VIEW *****/
-
