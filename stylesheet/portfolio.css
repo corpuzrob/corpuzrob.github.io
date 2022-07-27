@@ -867,13 +867,15 @@ input[type=text]:focus-visible {
     }
 
     .Pop_Up_Button {
-        width: 25vw; /* Sets the width relative to the viewport width */
+        width: 33vw; /* Sets the width relative to the viewport width */
         font-size: 3vw; /* Relative sizing of text */
         border: none;
         color: black; /* This makes the text in the buttons white when hovered over */
         background-color: #888eb2; /* The background of the button changes to black when hovered over */
         margin-bottom: 2vw;
         margin-right: 2vw;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     /* General styling for all buttons */
