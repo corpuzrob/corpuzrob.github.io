@@ -916,7 +916,7 @@ input[type=text]:focus-visible {
         margin-top: 1vh;
         margin-bottom: 1vh; /* Adds space between the submit button and the close button */
         width: 25vw;
-
+        padding: 1rem;
     }
 
     .form-container input[type=text] {
@@ -950,7 +950,7 @@ input[type=text]:focus-visible {
     }
 
     .q-container {
-        margin-bottom: 15vh;
+        margin-bottom: 25vh;
         text-align: left;
         width: 70vw;
     }
