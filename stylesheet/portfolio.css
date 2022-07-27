@@ -808,7 +808,7 @@ input[type=text]:focus-visible {
         width: 18%;
     }
 
-    .Nav_Github {
+    .Nav_Design {
         width: 19%;
     }
 
@@ -833,7 +833,7 @@ input[type=text]:focus-visible {
     }
 
     /* Reduces empty space below text and adds padding above it */ 
-    .Github_Text {
+    .Design_Text {
         margin-bottom: -200px;
         padding-top: 10%;
     }
