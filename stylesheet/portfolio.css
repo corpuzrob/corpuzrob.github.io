@@ -825,19 +825,19 @@ input[type=text]:focus-visible {
     */
 
     .Nav_Home {
-        width: 25%;
+        width: 21%;
     }
 
     .Nav_About {
-        width: 25%;
+        width: 24%;
     }
 
     .Nav_Details {
-        width: 25%;
+        width: 27%;
     }
 
     .Nav_Contact {
-        width: 25%;
+        width: 28%;
     }
 
     /* Hides desktop class to reorder main blocks */
