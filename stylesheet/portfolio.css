@@ -864,7 +864,7 @@ input[type=text]:focus-visible {
 
     /* Reduces empty space below text and adds padding above it */ 
     .Design_Text {
-        /* margin-bottom: -200px; */
+        margin-bottom: -100px;
         padding-top: 10%;
     }
 
