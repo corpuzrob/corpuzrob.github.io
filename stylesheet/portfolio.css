@@ -210,13 +210,14 @@ p:hover {
 
 /* Anchor elements */
 a {
-    color: #ffc6ff; /* This ensures all links are grey */
-    text-decoration: underline, bold;
+    color: #888eb2; /* This ensures all links are grey */
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* Anchor elements */
 a:hover {
-    color: #888eb2; /* This ensures all links are blue on hover */
+    color: #ffc6ff; /* This ensures all links are blue on hover */
 }
 
 /* Quotation elements */
