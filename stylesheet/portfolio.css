@@ -210,7 +210,7 @@ p:hover {
 
 /* Anchor elements */
 a {
-    color: gray; /* This ensures all links are grey */
+    color: #ffc6ff; /* This ensures all links are grey */
     text-decoration: underline;
 }
 
@@ -488,7 +488,7 @@ footer {
 /* Hover effect on slide show buttons */
 .Previous:hover, .Next:hover {
     background-color: rgba(0, 0, 0, 1); /* Makes the background of the arrows black */
-    color: #888eb2; /* Makes the arrows white when hovered over */
+    color: #ffc6ff; /* Makes the arrows white when hovered over */
 }
 
 /* Slideshow text */
@@ -520,7 +520,7 @@ footer {
 
 /* Hover effect for slideshow dots */
 .active, .dot:hover {
-    background-color: #888eb2; /* Sets the color of the dots when active or hovered over */
+    background-color: #ffc6ff; /* Sets the color of the dots when active or hovered over */
 }
 
 /* Fading animation for slideshow */
