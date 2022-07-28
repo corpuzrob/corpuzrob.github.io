@@ -802,6 +802,7 @@ input[type=text]:focus-visible {
         text-align: center;
     }
 
+    /* This was the old navbar breakdown before removing the Design tab
     .Nav_Home {
         width: 18%;
     }
@@ -816,6 +817,23 @@ input[type=text]:focus-visible {
 
     .Nav_Details {
         width: 20%;
+    }
+
+    .Nav_Contact {
+        width: 25%;
+    }
+    */
+
+    .Nav_Home {
+        width: 25%;
+    }
+
+    .Nav_About {
+        width: 25%;
+    }
+
+    .Nav_Details {
+        width: 25%;
     }
 
     .Nav_Contact {
