@@ -740,6 +740,14 @@ input[type=text]:focus-visible {
 }
 /***** END OF NEW CONTACT FORM STYLING *****/
 
+.goodbye_container {
+    width: 39.5vw;
+    height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
+    padding-top: 15%; /* Adds a small padding to the top of the slideshow container */
+    position: relative; /* This sets the container relative to its normal positioning */
+    margin: auto; /* This will horizontally center the container on the page */
+}
+
 .goodbye {
     margin-bottom: 1rem;
     text-align: left;
