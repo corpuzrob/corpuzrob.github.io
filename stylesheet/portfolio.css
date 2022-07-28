@@ -211,7 +211,7 @@ p:hover {
 /* Anchor elements */
 a {
     color: #ffc6ff; /* This ensures all links are grey */
-    text-decoration: underline;
+    text-decoration: underline, bold;
 }
 
 /* Anchor elements */
