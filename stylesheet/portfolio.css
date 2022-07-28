@@ -489,7 +489,7 @@ footer {
 /* Hover effect on slide show buttons */
 .Previous:hover, .Next:hover {
     background-color: rgba(0, 0, 0, 1); /* Makes the background of the arrows black */
-    color: #ffc6ff; /* Makes the arrows white when hovered over */
+    color: #ffc6ff; /* Makes the arrows pink, not white when hovered over */
 }
 
 /* Slideshow text */
