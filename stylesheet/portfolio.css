@@ -742,6 +742,7 @@ input[type=text]:focus-visible {
 
 .goodbye {
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 /* Hides mobile class to reorder main blocks */
